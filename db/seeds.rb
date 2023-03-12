@@ -13,7 +13,7 @@ Events.create!([{
   description: "Sashay to the books!",
 },
 {
-    event_title: "Drag Bruncn",
+    event_title: "Drag Brunch",
     image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO",
     description: "Brunch is a Drag!",
 },
