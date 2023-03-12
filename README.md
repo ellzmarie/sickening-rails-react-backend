@@ -1,7 +1,7 @@
 
 # Sickening Hunties
 
-### Sickening Hunties is a full CRUD events application for all the lovers and drag lovers! 
+### Sickening Hunties is a full CRUD events application for all things drag! 
 
 #### ![sickening1](./img/loop3.png)
 #### ![sickening2](./img/loop3.png)
@@ -46,8 +46,8 @@ Feel free to [click here to view the live site](). You can view additional links
 ---
 
 ### Future Enhancements: 
-#### 1. 
-#### 2. 
-#### 3. 
-#### 4. 
-#### 5. 
+#### 1. Ability to filter posts by locations, dates and specific events.
+#### 2. Add authentication. 
+#### 3. An expanded Menu option for drags to find specific drags in a location.
+#### 4. Build a safe space for the LGBTQ+ community to connect and communicate with one another.
+#### 5. Have a heart or like button and comment section for each event.
