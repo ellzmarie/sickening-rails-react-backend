@@ -1,24 +1,53 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Sickening Hunties
 
-Things you may want to cover:
+### Sickening Hunties is a full CRUD events application for all the lovers and drag lovers! 
 
-* Ruby version
+#### ![sickening1](./img/loop3.png)
+#### ![sickening2](./img/loop3.png)
 
-* System dependencies
+---
 
-* Configuration
+### Technologies Used:
+#### 1. Ruby on Rails
+#### 2. React
+#### 3. Postgresql
+#### 4. VS. CODE
+#### 5. Trello
 
-* Database creation
+---
 
-* Database initialization
+### Links
+Feel free to [click here to view the live site](). You can view additional links below:
 
-* How to run the test suite
+#### Trello BOARD: https://trello.com/b/HsiSEePZ/sickening-hunties
+#### Frontend Link: 
+#### Backend Link: 
 
-* Services (job queues, cache servers, search engines, etc.)
+---
 
-* Deployment instructions
+### User Stories 
+#### 1. 
+#### 2. 
+#### 3. 
+#### 4. 
+#### 5. 
+---
 
-* ...
+### Wireframes 
+#### ![wireframe1](img/wireframe1.png)
+#### ![wireframe2](img/wireframe2.png)
+
+---
+
+### ERD Diagram 
+#### ![](img/Screen%20Shot%202023-01-20%20at%209.32.13%20PM.png)
+
+---
+
+### Future Enhancements: 
+#### 1. 
+#### 2. 
+#### 3. 
+#### 4. 
+#### 5. 
