@@ -2,20 +2,25 @@ class EventsController < ApplicationController
 
     def index
         # render({ :json => "hi"})
-        events = Events.all 
-        render json: {status: 200, events: events}
+        render (json: {events: Event.all})
 
     def show
-        render json: Events.find(params[:id])
+        render (json: Event.find(params[:id]))
     end
 
     def create
+        event = Event.new(event_params)
+
+        if event.save
+            render(json: {event: event}, status: 201)
+        else 
+            render(json: {event: event}, status: 422)
+        end
     end
 
     private 
 
     def event_params
         params.required(:event).permit(:event_title, :image, :description)
-    end
-        
+    end        
 end
