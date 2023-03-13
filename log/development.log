@@ -390,3 +390,717 @@ Started POST "/events" for ::1 at 2023-03-12 16:41:18 -0700
   
 ActionController::RoutingError (No route matches [POST] "/events"):
   
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (9.1ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.9ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.1ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.1ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (5.0ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Storytime"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.orilliamatters.com%2Flocal-news%2Fpopular-drag-queen-story-time-sashays-into-orillia-library-5468681&psig=AOvVaw2K_ZXerZGith4lm2mBv4bc&ust=1678696062139000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjbuqX81f0CFQAAAAAdAAAAABAF"], ["description", "Sashay to the books!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Brunch"], ["image", "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dragqueenentertainment.com%2Fevents%2Fbrunchisadragdb111322&psig=AOvVaw3y_gdcAY3PFmoHjmGIDFNt&ust=1678696377961000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLjTk7z91f0CFQAAAAAdAAAAABBO"], ["description", "Brunch is a Drag!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mEvent Create (0.2ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Trivia"], ["image", "https://www.postermywall.com/index.php/posterbuilder/copy/1c9fa6ce9cfa7d8afb2409d0d305c443"], ["description", "Games + Fun + Prizes!"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/events" for ::1 at 2023-03-12 17:17:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/" for ::1 at 2023-03-12 17:18:27 -0700
+Processing by Rails::WelcomeController#index as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+  Rendering /Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.1ms | Allocations: 827)
+Completed 200 OK in 20ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 6638)
+
+
+Started GET "/events" for ::1 at 2023-03-12 17:18:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started POST "/events" for ::1 at 2023-03-12 17:18:48 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/events"):
+  
+Started GET "/events" for ::1 at 2023-03-12 17:23:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/events/1" for ::1 at 2023-03-12 17:24:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events/1"):
+  
+Started GET "/events" for ::1 at 2023-03-12 17:30:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/events/" for ::1 at 2023-03-12 17:30:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/events/" for ::1 at 2023-03-12 17:36:22 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/events/" for ::1 at 2023-03-12 17:36:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/" for ::1 at 2023-03-12 18:27:28 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.5ms | Allocations: 831)
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 6598)
+
+
+Started GET "/events" for ::1 at 2023-03-12 18:27:45 -0700
+  
+SyntaxError (/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/controllers/events_controller.rb:30: syntax error, unexpected label, expecting ')'
+        render (json: Event.find(params[:id]))
+                ^~~~~
+/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/controllers/events_controller.rb:30: syntax error, unexpected ')', expecting `end'
+...(json: Event.find(params[:id]))
+...                              ^
+/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/events_controller.rb:30: syntax error, unexpected label, expecting ')'
+app/controllers/events_controller.rb:30: syntax error, unexpected ')', expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:30: syntax error, unexpected label, expecting ')'
+app/controllers/events_controller.rb:30: syntax error, unexpected ')', expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:30: syntax error, unexpected label, expecting ')'
+app/controllers/events_controller.rb:30: syntax error, unexpected ')', expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/favicon.ico" for ::1 at 2023-03-12 18:27:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/events" for ::1 at 2023-03-12 18:28:34 -0700
+  
+SyntaxError (/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/events" for ::1 at 2023-03-12 18:29:13 -0700
+  
+SyntaxError (/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/events" for ::1 at 2023-03-12 18:29:16 -0700
+  
+SyntaxError (/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/events_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/events" for ::1 at 2023-03-12 18:30:05 -0700
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (56.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 105ms (Views: 32.1ms | ActiveRecord: 66.0ms | Allocations: 19509)
+
+
+Started GET "/events/" for ::1 at 2023-03-12 18:31:04 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+  [1m[36mEvent Load (8.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 29.9ms | ActiveRecord: 8.6ms | Allocations: 3243)
+
+
+Started GET "/events" for ::1 at 2023-03-12 18:31:12 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.7ms | Allocations: 3100)
+
+
+Started GET "/events/2" for ::1 at 2023-03-12 18:35:49 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/events/3" for ::1 at 2023-03-12 18:35:56 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/events" for ::1 at 2023-03-12 18:36:12 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 46.1ms | ActiveRecord: 3.2ms | Allocations: 3086)
+
+
+Started GET "/events/1" for ::1 at 2023-03-12 18:36:21 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for EventsController):
+  
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.3) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+rack-cors (2.0.0) lib/rack/cors.rb:102:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/events" for ::1 at 2023-03-12 18:36:29 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+  [1m[36mEvent Load (3.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 18.8ms | ActiveRecord: 3.5ms | Allocations: 3097)
+
+
+Started GET "/events" for ::1 at 2023-03-12 18:51:47 -0700
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 85ms (Views: 74.2ms | ActiveRecord: 15.9ms | Allocations: 8155)
+
+
+Started GET "/events/1" for ::1 at 2023-03-12 19:24:41 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `show'
+Completed 200 OK in 83ms (Views: 1.9ms | ActiveRecord: 14.5ms | Allocations: 7514)
+
+
+Started GET "/events/2" for ::1 at 2023-03-12 19:24:45 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 601)
+
+
+Started GET "/events/2" for ::1 at 2023-03-12 19:26:03 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `show'
+Completed 200 OK in 51ms (Views: 0.6ms | ActiveRecord: 30.2ms | Allocations: 3476)
+
+
+Started GET "/events/5" for ::1 at 2023-03-12 19:26:08 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 609)
+
+
+Started GET "/events/7" for ::1 at 2023-03-12 19:27:23 -0700
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:10:in `show'
+Completed 200 OK in 35ms (Views: 0.4ms | ActiveRecord: 19.7ms | Allocations: 3427)
+
+
+Started GET "/events" for ::1 at 2023-03-12 19:30:20 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 6.0ms | ActiveRecord: 8.2ms | Allocations: 5468)
+
+
+Started GET "/events/3" for ::1 at 2023-03-12 19:30:26 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa", "id"=>"3"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:13:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1233)
+
+
+Started POST "/events/3" for ::1 at 2023-03-12 19:31:52 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/events/3"):
+  
+Started POST "/events" for ::1 at 2023-03-12 19:33:08 -0700
+Processing by EventsController#create as */*
+  Parameters: {"event_title"=>"Drag brunch", "image"=>"eafe", "description"=>"fdafewa"}
+Completed 400 Bad Request in 35ms (ActiveRecord: 0.0ms | Allocations: 1012)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: event):
+  
+app/controllers/events_controller.rb:27:in `event_params'
+app/controllers/events_controller.rb:9:in `create'
+Started POST "/events" for ::1 at 2023-03-12 19:34:14 -0700
+Processing by EventsController#create as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch", "image"=>"eafeavea", "description"=>"fdafewagedsa"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:11:in `create'
+  [1m[36mEvent Create (9.7ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag brunch"], ["image", "eafeavea"], ["description", "fdafewagedsa"]]
+  ↳ app/controllers/events_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:11:in `create'
+Completed 201 Created in 157ms (Views: 1.2ms | ActiveRecord: 49.5ms | Allocations: 4339)
+
+
+Started POST "/events" for ::1 at 2023-03-12 19:35:40 -0700
+Processing by EventsController#create as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch", "zimage"=>"eafeavea", "description"=>"fdafewagedsa"}}
+[31mUnpermitted parameter: :zimage. Context: { controller: EventsController, action: create, request: #<ActionDispatch::Request:0x00007f8def4f6508>, params: {"event"=>{"event_title"=>"Drag brunch", "zimage"=>"eafeavea", "description"=>"fdafewagedsa"}, "controller"=>"events", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:11:in `create'
+  [1m[36mEvent Create (1.7ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag brunch"], ["image", nil], ["description", "fdafewagedsa"]]
+  ↳ app/controllers/events_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (13.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:11:in `create'
+Completed 201 Created in 61ms (Views: 5.7ms | ActiveRecord: 15.2ms | Allocations: 2443)
+
+
+Started POST "/events" for ::1 at 2023-03-12 19:35:54 -0700
+Processing by EventsController#create as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"fdafewagedsa"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:11:in `create'
+  [1m[36mEvent Create (1.1ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag brunch 123"], ["image", "eafeavea"], ["description", "fdafewagedsa"]]
+  ↳ app/controllers/events_controller.rb:11:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:11:in `create'
+Completed 201 Created in 14ms (Views: 4.4ms | ActiveRecord: 1.5ms | Allocations: 1874)
+
+
+Started GET "/events/40" for ::1 at 2023-03-12 19:39:37 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"fdafewagedsa"}, "id"=>"40"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:26:in `show'
+Completed 200 OK in 56ms (Views: 0.9ms | ActiveRecord: 24.7ms | Allocations: 3457)
+
+
+Started POST "/events/40" for ::1 at 2023-03-12 19:39:57 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/events/40"):
+  
+Started PUT "/events/40" for ::1 at 2023-03-12 19:40:08 -0700
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"40"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:10:in `update'
+  [1m[36mEvent Update (11.9ms)[0m  [1m[33mUPDATE "events" SET "description" = $1 WHERE "events"."id" = $2[0m  [["description", "queeen beeee"], ["id", 40]]
+  ↳ app/controllers/events_controller.rb:10:in `update'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:10:in `update'
+Completed 200 OK in 47ms (Views: 2.2ms | ActiveRecord: 14.8ms | Allocations: 2584)
+
+
+Started GET "/events/40" for ::1 at 2023-03-12 19:40:13 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"40"}
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:26:in `show'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 614)
+
+
+Started GET "/events/39" for ::1 at 2023-03-12 19:41:18 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"39"}
+  [1m[36mEvent Load (4.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 200 OK in 53ms (Views: 4.3ms | ActiveRecord: 24.9ms | Allocations: 3427)
+
+
+Started DELETE "/events/39" for ::1 at 2023-03-12 19:41:23 -0700
+Processing by EventsController#destroy as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"39"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mEvent Destroy (1.2ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 39]]
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 2.4ms | Allocations: 3841)
+
+
+  
+ActionView::MissingTemplate (Missing template events/destroy, application/destroy with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/views"
+  * "/Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actiontext-7.0.4.2/app/views"
+  * "/Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionmailbox-7.0.4.2/app/views"
+
+Did you mean?  rails/conductor/action_mailbox/inbound_emails/index
+               layouts/rails/conductor
+               rails/conductor/action_mailbox/inbound_emails/new
+               rails/conductor/action_mailbox/inbound_emails/sources/new
+               rails/conductor/action_mailbox/inbound_emails/show
+               layouts/mailer):
+  
+app/controllers/events_controller.rb:10:in `destroy'
+Started GET "/events/39" for ::1 at 2023-03-12 19:41:52 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"39"}
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 404 Not Found in 19ms (ActiveRecord: 1.7ms | Allocations: 917)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=39):
+  
+app/controllers/events_controller.rb:31:in `show'
+Started GET "/events/40" for ::1 at 2023-03-12 19:42:00 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"40"}
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 200 OK in 12ms (Views: 7.4ms | ActiveRecord: 1.5ms | Allocations: 639)
+
+
+Started GET "/events/39" for ::1 at 2023-03-12 19:42:11 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"39"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 0.4ms | Allocations: 841)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=39):
+  
+app/controllers/events_controller.rb:31:in `show'
+Started GET "/events/38" for ::1 at 2023-03-12 19:42:18 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"38"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 614)
+
+
+Started DELETE "/events/38" for ::1 at 2023-03-12 19:42:22 -0700
+Processing by EventsController#destroy as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"38"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mEvent Destroy (1.9ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 38]]
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.5ms | Allocations: 3077)
+
+
+  
+ActionView::MissingTemplate (Missing template events/destroy, application/destroy with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/views"
+  * "/Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actiontext-7.0.4.2/app/views"
+  * "/Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionmailbox-7.0.4.2/app/views"
+
+Did you mean?  rails/conductor/action_mailbox/inbound_emails/index
+               layouts/rails/conductor
+               rails/conductor/action_mailbox/inbound_emails/new
+               rails/conductor/action_mailbox/inbound_emails/sources/new
+               rails/conductor/action_mailbox/inbound_emails/show
+               layouts/mailer):
+  
+app/controllers/events_controller.rb:10:in `destroy'
+Started GET "/events/38" for ::1 at 2023-03-12 19:42:30 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"38"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms | Allocations: 841)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=38):
+  
+app/controllers/events_controller.rb:31:in `show'
+Started GET "/events/35" for ::1 at 2023-03-12 19:42:36 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"queeen beeee"}, "id"=>"35"}
+  [1m[36mEvent Load (2.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 200 OK in 12ms (Views: 4.4ms | ActiveRecord: 2.2ms | Allocations: 629)
+
+
+Started PUT "/events/35" for ::1 at 2023-03-12 19:42:50 -0700
+Processing by EventsController#update as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"Let's sashay to the books! "}, "id"=>"35"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:14:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:15:in `update'
+  [1m[36mEvent Update (0.7ms)[0m  [1m[33mUPDATE "events" SET "event_title" = $1, "image" = $2, "description" = $3 WHERE "events"."id" = $4[0m  [["event_title", "Drag brunch 123"], ["image", "eafeavea"], ["description", "Let's sashay to the books! "], ["id", 35]]
+  ↳ app/controllers/events_controller.rb:15:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:15:in `update'
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2472)
+
+
+Started GET "/events/35" for ::1 at 2023-03-12 19:43:08 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag brunch 123", "image"=>"eafeavea", "description"=>"Let's sashay to the books! "}, "id"=>"35"}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:31:in `show'
+Completed 200 OK in 13ms (Views: 5.5ms | ActiveRecord: 0.5ms | Allocations: 614)
+
+
