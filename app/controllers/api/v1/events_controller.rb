@@ -3,10 +3,15 @@ class Api::V1::EventsController < ApplicationController
     def index
         # render({ :json => "hi"})
         render (json: {events: Event.all})
+    
+    def new 
+    end 
 
-    def show
-        render (json: Event.find(params[:id]))
-    end
+    def delete 
+    end 
+
+    def update 
+    end 
 
     def create
         event = Event.new(event_params)
@@ -16,6 +21,13 @@ class Api::V1::EventsController < ApplicationController
         else 
             render(json: {event: event}, status: 422)
         end
+    end
+
+    def edit 
+    end 
+
+    def show
+        render (json: Event.find(params[:id]))
     end
 
     private 
