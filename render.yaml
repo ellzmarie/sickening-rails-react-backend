@@ -1,7 +1,7 @@
 databases:
   - name: Postgresql 15
     databaseName: sickening_rails_react_api_development
-    user: ellie-mariematutis-digal/
+    user: ellie-mariematutis-digal
 
 services:
   - type: web
