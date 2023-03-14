@@ -7,4 +7,3 @@ bundle exec rake assets:precompile
 bundle exec rake assets:clean
 bundle exec rake db:migrate
 
-chmod a+x bin/render-build.sh
