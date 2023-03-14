@@ -1,0 +1,18 @@
+databases:
+  - name: Postgresql 15
+    databaseName: sickening_rails_react_api_development
+    user: ellie-mariematutis-digal/
+
+services:
+  - type: web
+    name: sickeningHunties
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sickening_rails_react_api_development
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
