@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: sickening_rails_react_api_production
-  username: sickening_rails_react_api
-  password: <%= ENV["SICKENING_RAILS_REACT_API_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
