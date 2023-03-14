@@ -3838,3 +3838,75 @@ Processing by EventsController#index as HTML
 Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 11.5ms | Allocations: 17518)
 
 
+Started GET "/events" for ::1 at 2023-03-14 15:52:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time ABC123", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}}
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 6.0ms | Allocations: 17532)
+
+
+Started PUT "/events" for ::1 at 2023-03-14 15:53:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [PUT] "/events"):
+  
+Started POST "/events" for ::1 at 2023-03-14 15:53:08 -0700
+Processing by EventsController#create as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time ABC123", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:22:in `create'
+  [1m[36mEvent Create (8.9ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Story time ABC123"], ["image", "eafeaveafdasfda"], ["description", "Baby I was born this way!"]]
+  ↳ app/controllers/events_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:22:in `create'
+Completed 201 Created in 31ms (Views: 0.3ms | ActiveRecord: 18.9ms | Allocations: 19167)
+
+
+Started GET "/events/50" for ::1 at 2023-03-14 15:53:18 -0700
+Processing by EventsController#show as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time ABC123", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}, "id"=>"50"}
+  [1m[36mEvent Load (2.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:34:in `show'
+Completed 200 OK in 27ms (Views: 1.3ms | ActiveRecord: 3.6ms | Allocations: 2832)
+
+
+Started DELETE "/events/50" for ::1 at 2023-03-14 15:53:31 -0700
+Processing by EventsController#destroy as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time ABC123", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}, "id"=>"50"}
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mEvent Destroy (4.5ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 50]]
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:9:in `destroy'
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 7.6ms | Allocations: 5234)
+
+
+  
+ActionView::MissingTemplate (Missing template events/destroy, application/destroy with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/ellie-mariematutis-digal/Desktop/sei-yeti/unit_4/sickening-rails-react-backend/app/views"
+  * "/Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actiontext-7.0.4.2/app/views"
+  * "/Users/ellie-mariematutis-digal/.rbenv/versions/3.0.5/lib/ruby/gems/3.0.0/gems/actionmailbox-7.0.4.2/app/views"
+
+Did you mean?  rails/conductor/action_mailbox/inbound_emails/index
+               layouts/rails/conductor
+               rails/conductor/action_mailbox/inbound_emails/new
+               rails/conductor/action_mailbox/inbound_emails/sources/new
+               rails/conductor/action_mailbox/inbound_emails/show
+               layouts/mailer):
+  
+app/controllers/events_controller.rb:10:in `destroy'
+Started GET "/events" for ::1 at 2023-03-14 15:53:39 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time ABC123", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}}
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 2.4ms | Allocations: 1186)
+
+
