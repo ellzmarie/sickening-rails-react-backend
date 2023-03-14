@@ -26,6 +26,9 @@ class EventsController < ApplicationController
         end 
     end 
 
+    def edit
+    end 
+
     def show
         puts params 
         event = Event.find(params[:id])
