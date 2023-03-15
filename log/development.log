@@ -4872,3 +4872,59 @@ Processing by EventsController#index as */*
 Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.4ms | Allocations: 1133)
 
 
+Started GET "/events" for ::1 at 2023-03-15 14:12:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (3.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 4.9ms | ActiveRecord: 9.3ms | Allocations: 5601)
+
+
+Started GET "/events" for ::1 at 2023-03-15 14:12:53 -0700
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 1.4ms | Allocations: 1137)
+
+
+Started GET "/events" for ::1 at 2023-03-15 14:13:43 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time ABC123", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}}
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 4.8ms | ActiveRecord: 6.5ms | Allocations: 5603)
+
+
+Started PUT "/events" for ::1 at 2023-03-15 14:14:01 -0700
+  
+ActionController::RoutingError (No route matches [PUT] "/events"):
+  
+Started POST "/events" for ::1 at 2023-03-15 14:14:13 -0700
+Processing by EventsController#create as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/events_controller.rb:22:in `create'
+  [1m[36mEvent Create (4.7ms)[0m  [1m[32mINSERT INTO "events" ("event_title", "image", "description") VALUES ($1, $2, $3) RETURNING "id"[0m  [["event_title", "Drag Story time"], ["image", "eafeaveafdasfda"], ["description", "Baby I was born this way!"]]
+  ↳ app/controllers/events_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/events_controller.rb:22:in `create'
+Completed 201 Created in 23ms (Views: 0.3ms | ActiveRecord: 11.3ms | Allocations: 2492)
+
+
+Started GET "/events" for ::1 at 2023-03-15 14:14:24 -0700
+Processing by EventsController#index as */*
+  Parameters: {"event"=>{"event_title"=>"Drag Story time", "image"=>"eafeaveafdasfda", "description"=>"Baby I was born this way!"}}
+  [1m[36mEvent Load (3.0ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 3.0ms | Allocations: 1137)
+
+
+Started GET "/events" for ::1 at 2023-03-15 14:14:31 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/controllers/events_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 4.6ms | ActiveRecord: 4.4ms | Allocations: 5656)
+
+
